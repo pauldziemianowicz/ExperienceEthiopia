@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Ethiopia_Adventure_Tours">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Ethiopia Adventure Tours</title>
+  <base href="/">
+
+  <!-- FAVICON-->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/RanRanRu.ico"> -->
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles/style.css">
+
+  <!-- & CDNs/BOWER PACKAGES-->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.7.1/angular-local-storage.js"></script>
+
+  <!-- ***** ANGULAR COMPONENTS  ***** -->
+  <!-- ******************************* -->
+
+  <!-- ***** APPLICATION ***** -->
+  <script src="app/app.module.js"></script>
+  <script src="app/app.config.js"></script>
+  <script src="app/app.routes.js"></script>
+  <script src="app/app.run.js"></script>
+
+  <script src="app/controllers/main.controller.js"></script>
+  <script src="app/directives/mainNavigation.directive.js"></script>
+  <script src="app/directives/home.directive.js"></script>
+
+</head>
+<body>
+  <ui-view></ui-view>
+</body>
+</html>

@@ -1,0 +1,95 @@
+section.main-navigation-header {
+  position: fixed;
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  width: 100%;
+  height: 8%;
+  border-bottom: 1px solid #646464;
+  box-shadow: -1px 1px 1px 0px #c3c2c2;
+  background-color: white; }
+  section.main-navigation-header div.logo-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    top: 10%;
+    left: 3%;
+    border: 1px solid #646464; }
+    section.main-navigation-header div.logo-container p {
+      margin: 0;
+      padding: 0; }
+    section.main-navigation-header div.logo-container:hover {
+      color: black;
+      cursor: pointer;
+      cursor: hand; }
+  section.main-navigation-header div.main-navigation-buffer {
+    flex: 1; }
+  section.main-navigation-header nav.navigation-bar {
+    display: flex;
+    width: 100%;
+    padding-right: 5%;
+    justify-content: flex-end; }
+    section.main-navigation-header nav.navigation-bar div.navigation-option {
+      width: fit-content;
+      padding: 0px 4% 8px 4%; }
+      section.main-navigation-header nav.navigation-bar div.navigation-option p {
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        color: #646464; }
+        section.main-navigation-header nav.navigation-bar div.navigation-option p:hover {
+          color: black;
+          cursor: pointer;
+          cursor: hand; }
+
+section.home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; }
+  section.home-page div.header-filler {
+    width: 100%;
+    height: 8%; }
+  section.home-page section.website-introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 75%;
+    border-bottom: 1px solid black; }
+    section.home-page section.website-introduction-container h3, section.home-page section.website-introduction-container h3, section.home-page section.website-introduction-container h5 {
+      width: fit-content;
+      padding: 0;
+      margin: 0; }
+    section.home-page section.website-introduction-container div.intro-statement-1 {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    section.home-page section.website-introduction-container div.intro-statement-2 {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    section.home-page section.website-introduction-container div.introductory-ctas {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      section.home-page section.website-introduction-container div.introductory-ctas button {
+        width: 100%; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+{
+  "name": "ethiopia_adventure_tours",
+  "description": "",
+  "main": "",
+  "authors": [
+    "pauldziemianowicz <pauldziemianowicz@gmail.org>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/pauldziemianowicz/EthiopiaAdventureTours",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,50 @@
+section.home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  div.header-filler {
+    width: 100%;
+    height: 8%;
+  }
+  section.website-introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 75%;
+    border-bottom: 1px solid black;
+    h3, h3, h5 {
+      width: fit-content;
+      padding: 0;
+      margin: 0;
+    }
+    div.intro-statement-1 {
+      // position: absolute;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    div.intro-statement-2 {
+      // position: absolute;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    div.introductory-ctas {
+      // position: absolute;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
