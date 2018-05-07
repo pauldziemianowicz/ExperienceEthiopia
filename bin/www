@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../web_server');
+var app = require('../server');
 var debug = require('debug')('EAT-Site:server');
 var http = require('http');
 
