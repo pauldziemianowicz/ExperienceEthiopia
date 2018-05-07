@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Jua|PT+Sans+Caption");
 section.main-navigation-header {
   position: fixed;
   display: flex;
@@ -35,12 +36,31 @@ section.main-navigation-header {
     section.main-navigation-header nav.navigation-bar div.navigation-option {
       width: fit-content;
       padding: 0px 4% 8px 4%; }
-      section.main-navigation-header nav.navigation-bar div.navigation-option p {
+      section.main-navigation-header nav.navigation-bar div.navigation-option p.nav-option-text {
         margin: 0;
         padding: 0;
         width: fit-content;
         color: #646464; }
-        section.main-navigation-header nav.navigation-bar div.navigation-option p:hover {
+        section.main-navigation-header nav.navigation-bar div.navigation-option p.nav-option-text:hover {
+          color: black;
+          cursor: pointer;
+          cursor: hand; }
+  section.main-navigation-header div.about-us-dropdown, section.main-navigation-header div.hiking-tours-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #a0a0a0;
+    box-shadow: -1px 1px 1px 0px #c3c2c2; }
+    section.main-navigation-header div.about-us-dropdown div.dropdown-option, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option {
+      padding: 5px;
+      border-bottom: 1px solid #f0f0f0; }
+      section.main-navigation-header div.about-us-dropdown div.dropdown-option:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option:hover {
+        background-color: rgba(1, 138, 44, 0.1); }
+      section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text {
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        color: #646464; }
+        section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text:hover {
           color: black;
           cursor: pointer;
           cursor: hand; }
@@ -49,47 +69,94 @@ section.home-page {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%; }
+  width: 100vw;
+  min-height: 100%; }
   section.home-page div.header-filler {
     width: 100%;
-    height: 8%; }
+    height: 8vh; }
   section.home-page section.website-introduction-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    height: 75%;
-    border-bottom: 1px solid black; }
-    section.home-page section.website-introduction-container h3, section.home-page section.website-introduction-container h3, section.home-page section.website-introduction-container h5 {
+    height: 75vh;
+    border-bottom: 1px solid black;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../../../assets/images/simien-mountains-background.jpg");
+    background-size: 100%;
+    background-position: 0px -18.75vh;
+    padding: 40px 0px 80px 0px; }
+    section.home-page section.website-introduction-container h1, section.home-page section.website-introduction-container h2, section.home-page section.website-introduction-container h3, section.home-page section.website-introduction-container h4, section.home-page section.website-introduction-container h5 {
       width: fit-content;
       padding: 0;
-      margin: 0; }
-    section.home-page section.website-introduction-container div.intro-statement-1 {
-      width: fit-content;
+      margin: 0;
+      font-family: 'Jua', sans-serif; }
+    section.home-page section.website-introduction-container div.intro-statement {
       display: flex;
       flex-direction: column;
-      align-items: center; }
-    section.home-page section.website-introduction-container div.intro-statement-2 {
-      width: fit-content;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      width: fit-content; }
     section.home-page section.website-introduction-container div.introductory-ctas {
-      width: 30%;
+      width: 25%;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: flex-start; }
       section.home-page section.website-introduction-container div.introductory-ctas button {
-        width: 100%; }
+        width: 100%;
+        background-color: #018A2C;
+        padding: 0.500625782227785vmin 0.750938673341677vmin 0.500625782227785vmin 0.750938673341677vmin;
+        margin: 0;
+        box-shadow: -1px 1px 1px 0px black;
+        color: white;
+        border: 1px solid black;
+        font-weight: 600;
+        font-size: 18px; }
+        section.home-page section.website-introduction-container div.introductory-ctas button:hover {
+          cursor: pointer;
+          cursor: hand; }
+      section.home-page section.website-introduction-container div.introductory-ctas p {
+        margin: 0;
+        color: white;
+        font-size: 14px;
+        color: #ebebeb; }
+        section.home-page section.website-introduction-container div.introductory-ctas p:hover {
+          cursor: pointer;
+          cursor: hand;
+          color: white; }
+  section.home-page div.introduction-break {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 25vh; }
+    section.home-page div.introduction-break div.learn-more-cta {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: fit-content;
+      padding-top: 10px; }
+      section.home-page div.introduction-break div.learn-more-cta h5 {
+        position: absolute;
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        font-family: 'Jua', sans-serif; }
+      section.home-page div.introduction-break div.learn-more-cta:hover {
+        cursor: pointer;
+        cursor: hand; }
+  section.home-page section.home-page-content-introduction {
+    width: 100%;
+    height: 100vh; }
 
 html {
   width: 100%;
   height: 100%; }
 
 body {
-  width: 100%;
-  height: 100%; }
+  width: 100vw;
+  height: 100vh; }
+
+p {
+  font-family: 'PT Sans Caption', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

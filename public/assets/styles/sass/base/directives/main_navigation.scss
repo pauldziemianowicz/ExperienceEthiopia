@@ -39,7 +39,32 @@ section.main-navigation-header {
     div.navigation-option {
       width: fit-content;
       padding: 0px 4% 8px 4%;
-      p {
+      p.nav-option-text {
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        color: rgb(100, 100, 100);
+        &:hover {
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+          cursor: hand;
+        }
+      }
+    }
+  }
+  div.about-us-dropdown, div.hiking-tours-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(160, 160, 160);
+    box-shadow: -1px 1px 1px 0px rgb(195, 194, 194);
+    // padding: 0px 5px 0px 5px;
+    div.dropdown-option {
+      padding: 5px;
+      border-bottom: 1px solid rgb(240, 240, 240);
+      &:hover {
+        background-color: rgba(1, 138, 44, 0.1);
+      }
+      p.dropdown-option-text {
         margin: 0;
         padding: 0;
         width: fit-content;

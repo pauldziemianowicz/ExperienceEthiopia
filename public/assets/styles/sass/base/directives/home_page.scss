@@ -2,49 +2,96 @@ section.home-page {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  min-height: 100%;
   div.header-filler {
     width: 100%;
-    height: 8%;
+    height: 8vh;
   }
   section.website-introduction-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    height: 75%;
+    height: 75vh;
     border-bottom: 1px solid black;
-    h3, h3, h5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../../../../assets/images/simien-mountains-background.jpg');
+    background-size: 100%;
+    background-position: 0px -18.75vh;
+    padding: 40px 0px 80px 0px;
+    h1, h2, h3, h4, h5 {
       width: fit-content;
       padding: 0;
       margin: 0;
+      font-family: 'Jua', sans-serif;
     }
-    div.intro-statement-1 {
-      // position: absolute;
-      width: fit-content;
+    div.intro-statement {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    div.intro-statement-2 {
-      // position: absolute;
       width: fit-content;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
     div.introductory-ctas {
-      // position: absolute;
-      width: 30%;
+      width: 25%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      // justify-content: center;
+      align-items: flex-start;
       button {
         width: 100%;
+        background-color: #018A2C;
+        padding: 0.500625782227785vmin 0.750938673341677vmin 0.500625782227785vmin 0.750938673341677vmin;
+        margin: 0;
+        box-shadow: -1px 1px 1px 0px black;
+        color: white;
+        border: 1px solid black;
+        font-weight: 600;
+        font-size: 18px;
+        &:hover {
+          cursor: pointer;
+          cursor: hand;
+        }
+      }
+      p {
+        margin: 0;
+        color: white;
+        font-size: 14px;
+        color: rgb(235, 235, 235);
+        &:hover {
+          cursor: pointer;
+          cursor: hand;
+          color: white;
+        }
       }
     }
+  }
+  div.introduction-break {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 25vh;
+    div.learn-more-cta {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: fit-content;
+      padding-top: 10px;
+      h5 {
+        position: absolute;
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        font-family: 'Jua', sans-serif;
+      }
+      &:hover {
+        cursor: pointer;
+        cursor: hand;
+      }
+    }
+  }
+  section.home-page-content-introduction {
+    width: 100%;
+    height: 100vh;
   }
 }

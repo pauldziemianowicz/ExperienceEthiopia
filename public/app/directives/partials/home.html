@@ -3,17 +3,25 @@
   <div class="header-filler"></div>
 
   <section class="website-introduction-container">
-    <div class="intro-statement-1">
-      <h3>Seeking an Unforgettable Experience?</h3>
-      <h3>Look No Further</h3>
-    </div>
-    <div class="intro-statement-2">
-      <h4>We Provide Authentic Ethiopian Travel Experiences in Simien Mountain National Park and Beyond.</h4>
+    <div class="intro-statement">
+      <h1>Seeking an Unforgettable Experience? Look No Further</h1>
+      <h3>We Provide Authentic Ethiopia Travel Experiences in Simien Mountain National Park and Beyond</h3>
     </div>
     <div class="introductory-ctas">
-      <button class="book-cta form-control">Book Your Trip Today</button>
-      <p>Not ready to book? Learn more...</p>
+      <button class="book-cta form-control" ng-click="view.bookTrip()">Book Your Trip Today</button>
+      <p ng-click="view.homeLearnMoreNav()">Not ready to book? Learn more...</p>
     </div>
+  </section>
+
+  <div class="introduction-break">
+    <div class="learn-more-cta" ng-click="view.homeLearnMoreNav()">
+      <h5>Learn More</h5>
+      <i class="fas fa-angle-down fa-10x" style="padding: 0; margin: 10px 0px 0px 0px; height: 115px; width: 100px;"></i>
+    </div>
+  </div>
+
+  <section class="home-page-content-introduction">
+
   </section>
 
 </section>
