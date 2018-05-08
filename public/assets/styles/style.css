@@ -180,7 +180,7 @@ section.our-guides {
       width: 100%;
       border-top: 1px solid #d2d2d2; }
       section.our-guides section.page-content-main div.page-content div.guide-content-block {
-        padding: 15px 0 15px 0;
+        padding: 15px 0 10px 0;
         border-bottom: 1px solid #d2d2d2; }
         section.our-guides section.page-content-main div.page-content div.guide-content-block img.guide-image {
           width: 35%;
@@ -192,6 +192,16 @@ section.our-guides {
         section.our-guides section.page-content-main div.page-content div.guide-content-block p.guide-description {
           font-size: 2.252816020025031vmin;
           margin: 0px; }
+        section.our-guides section.page-content-main div.page-content div.guide-content-block div.guide-contact {
+          display: flex;
+          justify-content: flex-start; }
+          section.our-guides section.page-content-main div.page-content div.guide-content-block div.guide-contact p {
+            font-size: 2.252816020025031vmin;
+            font-weight: 600;
+            margin: 20px 0 0 0;
+            padding: 0; }
+            section.our-guides section.page-content-main div.page-content div.guide-content-block div.guide-contact p.email {
+              margin-right: 40px; }
 
 html {
   width: 100%;
