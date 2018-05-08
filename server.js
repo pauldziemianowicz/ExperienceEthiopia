@@ -17,6 +17,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/", express.static(__dirname + "/public/index.html"));
+app.use("/our-story", express.static(__dirname + "/public/index.html"));
+app.use("/our-guides", express.static(__dirname + "/public/index.html"));
+app.use("/what-makes-us-different", express.static(__dirname + "/public/index.html"));
+app.use("/photo-gallery", express.static(__dirname + "/public/index.html"));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

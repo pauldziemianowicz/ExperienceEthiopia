@@ -5,7 +5,7 @@ section.main-navigation-header {
   z-index: 10;
   flex-direction: column;
   width: 100%;
-  height: 8%;
+  height: 8vh;
   border-bottom: 1px solid #646464;
   box-shadow: -1px 1px 1px 0px #c3c2c2;
   background-color: white; }
@@ -54,16 +54,20 @@ section.main-navigation-header {
       padding: 5px;
       border-bottom: 1px solid #f0f0f0; }
       section.main-navigation-header div.about-us-dropdown div.dropdown-option:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option:hover {
+        background-color: rgba(1, 138, 44, 0.1);
+        cursor: pointer;
+        cursor: hand; }
+      section.main-navigation-header div.about-us-dropdown div.dropdown-option.current-page, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option.current-page {
         background-color: rgba(1, 138, 44, 0.1); }
+        section.main-navigation-header div.about-us-dropdown div.dropdown-option.current-page p.dropdown-option-text, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option.current-page p.dropdown-option-text {
+          color: black; }
       section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text {
         margin: 0;
         padding: 0;
         width: fit-content;
         color: #646464; }
         section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text:hover {
-          color: black;
-          cursor: pointer;
-          cursor: hand; }
+          color: black; }
 
 section.home-page {
   position: relative;
@@ -147,6 +151,47 @@ section.home-page {
   section.home-page section.home-page-content-introduction {
     width: 100%;
     height: 100vh; }
+
+section.our-guides {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%; }
+  section.our-guides div.header-filler {
+    width: 100%;
+    height: 8vh; }
+  section.our-guides section.page-content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 92vh;
+    padding: 3vh 7vw 3vh 7vw; }
+    section.our-guides section.page-content-main div.page-content-title {
+      width: 100%;
+      padding: 5px 0 5px 0;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #969696; }
+      section.our-guides section.page-content-main div.page-content-title h1 {
+        margin: 0;
+        font-size: 5.006257822277847vmin; }
+    section.our-guides section.page-content-main div.page-content {
+      display: block;
+      width: 100%;
+      border-top: 1px solid #d2d2d2; }
+      section.our-guides section.page-content-main div.page-content div.guide-content-block {
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid #d2d2d2; }
+        section.our-guides section.page-content-main div.page-content div.guide-content-block img.guide-image {
+          width: 35%;
+          float: left;
+          margin: 8px 15px 5px 0px; }
+        section.our-guides section.page-content-main div.page-content div.guide-content-block h2.guide-name {
+          font-size: 4.005006258vmin;
+          padding: 0; }
+        section.our-guides section.page-content-main div.page-content div.guide-content-block p.guide-description {
+          font-size: 2.252816020025031vmin;
+          margin: 0px; }
 
 html {
   width: 100%;
