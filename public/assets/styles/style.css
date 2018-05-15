@@ -240,6 +240,12 @@ section.our-story {
           section.our-story section.page-content-main div.page-content div.story-block img.our-story-2 {
             float: left;
             margin: 0px 15px 15px 0px; }
+        section.our-story section.page-content-main div.page-content div.story-block span.open-our-guides {
+          color: rgba(0, 0, 255, 0.9); }
+          section.our-story section.page-content-main div.page-content div.story-block span.open-our-guides:hover {
+            color: blue;
+            cursor: pointer;
+            cursor: hand; }
 
 section.three-day-hiking-tour {
   position: relative;

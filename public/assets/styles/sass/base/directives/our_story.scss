@@ -47,6 +47,14 @@ section.our-story {
             margin: 0px 15px 15px 0px;
           }
         }
+        span.open-our-guides {
+          color: rgba(0, 0, 255, 0.9);
+          &:hover {
+            color: blue;
+            cursor: pointer;
+            cursor: hand;
+          }
+        }
       }
     }
   }
