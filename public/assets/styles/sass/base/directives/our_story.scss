@@ -1,0 +1,53 @@
+section.our-story {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%;
+  section.page-content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 92vh;
+    padding: 3vh 7vw 3vh 7vw;
+    div.page-content-title {
+      width: 100%;
+      padding: 5px 0 5px 0;
+      margin-bottom: 50px;
+      border-bottom: 1px solid rgb(150, 150, 150);
+      h1 {
+        margin: 0;
+        font-size: 5.006257822277847vmin;
+      }
+    }
+    div.page-content {
+      display: block;
+      width: 100%;
+      div.story-block {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        p.story-paragraph-1 {
+          clear: left;
+          &.p1 {
+            text-indent: 60px;
+          }
+        }
+        p.story-paragraph-2 {
+          clear: right;
+        }
+        img {
+          width: 43.80475594vmin;
+          &.our-story-1 {
+            float: right;
+            margin: 0px 0px 15px 15px;
+          }
+          &.our-story-2 {
+            float: left;
+            margin: 0px 15px 15px 0px;
+          }
+        }
+      }
+    }
+  }
+}

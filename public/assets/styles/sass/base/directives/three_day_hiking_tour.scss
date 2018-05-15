@@ -4,10 +4,6 @@ section.three-day-hiking-tour {
   flex-direction: column;
   width: 100vw;
   min-height: 100%;
-  div.header-filler {
-    width: 100%;
-    height: 8vh;
-  }
   section.page-content-main {
     display: flex;
     flex-direction: column;
@@ -21,7 +17,6 @@ section.three-day-hiking-tour {
       border-bottom: 1px solid rgb(150, 150, 150);
       h1 {
         margin: 0;
-        // font-size: 50px;
         font-size: 5.006257822277847vmin;
       }
     }
@@ -43,33 +38,34 @@ section.three-day-hiking-tour {
             }
           }
           div.day-information {
+            overflow: hidden;
             display: block;
             padding-left: 15px;
-              div.day-stats {
-                float: left;
+            height: fit-content;
+            div.day-stats {
+              float: left;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 30px;
+              span.day-stat {
                 display: flex;
-                flex-direction: column;
-                margin-bottom: 30px;
-                span.day-stat {
-                  display: flex;
+                margin: 0;
+                p {
                   margin: 0;
-                  p {
-                    margin: 0;
-                    padding: 0;
-                    &.day-stats-title {
-                      font-weight: 600;
-                    }
+                  padding: 0;
+                  &.day-stats-title {
+                    font-weight: 600;
                   }
                 }
               }
-              div.day-images {
-                float: right;
-                img.day-image {
-                  width: 450px;
-                  float: right;
-                  margin: 0px 0px 15px 15px;
-                }
+            }
+            div.day-images {
+              float: right;
+              img.day-image {
+                width: 450px;
+                margin: 0px 0px 15px 15px;
               }
+            }
             div.day-description {
               clear: left;
               margin-top: 50px;

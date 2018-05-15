@@ -77,9 +77,6 @@ section.home-page {
   flex-direction: column;
   width: 100vw;
   min-height: 100%; }
-  section.home-page div.header-filler {
-    width: 100%;
-    height: 8vh; }
   section.home-page section.website-introduction-container {
     display: flex;
     flex-direction: column;
@@ -160,9 +157,6 @@ section.our-guides {
   flex-direction: column;
   width: 100vw;
   min-height: 100%; }
-  section.our-guides div.header-filler {
-    width: 100%;
-    height: 8vh; }
   section.our-guides section.page-content-main {
     display: flex;
     flex-direction: column;
@@ -205,15 +199,54 @@ section.our-guides {
             section.our-guides section.page-content-main div.page-content div.guide-content-block div.guide-contact p.email {
               margin-right: 40px; }
 
+section.our-story {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%; }
+  section.our-story section.page-content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 92vh;
+    padding: 3vh 7vw 3vh 7vw; }
+    section.our-story section.page-content-main div.page-content-title {
+      width: 100%;
+      padding: 5px 0 5px 0;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #969696; }
+      section.our-story section.page-content-main div.page-content-title h1 {
+        margin: 0;
+        font-size: 5.006257822277847vmin; }
+    section.our-story section.page-content-main div.page-content {
+      display: block;
+      width: 100%; }
+      section.our-story section.page-content-main div.page-content div.story-block {
+        display: block;
+        overflow: hidden;
+        width: 100%; }
+        section.our-story section.page-content-main div.page-content div.story-block p.story-paragraph-1 {
+          clear: left; }
+          section.our-story section.page-content-main div.page-content div.story-block p.story-paragraph-1.p1 {
+            text-indent: 60px; }
+        section.our-story section.page-content-main div.page-content div.story-block p.story-paragraph-2 {
+          clear: right; }
+        section.our-story section.page-content-main div.page-content div.story-block img {
+          width: 43.80475594vmin; }
+          section.our-story section.page-content-main div.page-content div.story-block img.our-story-1 {
+            float: right;
+            margin: 0px 0px 15px 15px; }
+          section.our-story section.page-content-main div.page-content div.story-block img.our-story-2 {
+            float: left;
+            margin: 0px 15px 15px 0px; }
+
 section.three-day-hiking-tour {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100vw;
   min-height: 100%; }
-  section.three-day-hiking-tour div.header-filler {
-    width: 100%;
-    height: 8vh; }
   section.three-day-hiking-tour section.page-content-main {
     display: flex;
     flex-direction: column;
@@ -243,8 +276,10 @@ section.three-day-hiking-tour {
           section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-header h5 {
             text-decoration: underline; }
           section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information {
+            overflow: hidden;
             display: block;
-            padding-left: 15px; }
+            padding-left: 15px;
+            height: fit-content; }
             section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-stats {
               float: left;
               display: flex;
@@ -262,7 +297,6 @@ section.three-day-hiking-tour {
               float: right; }
               section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-images img.day-image {
                 width: 450px;
-                float: right;
                 margin: 0px 0px 15px 15px; }
             section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-description {
               clear: left;
@@ -305,5 +339,9 @@ div.content-dropdown-container {
         color: black; }
     div.content-dropdown-container div.content-dropdown-label.displayed h4 {
       color: black; }
+
+div.header-filler {
+  width: 100%;
+  height: 8vh; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,10 +4,6 @@ section.our-guides {
   flex-direction: column;
   width: 100vw;
   min-height: 100%;
-  div.header-filler {
-    width: 100%;
-    height: 8vh;
-  }
   section.page-content-main {
     display: flex;
     flex-direction: column;
@@ -21,7 +17,6 @@ section.our-guides {
       border-bottom: 1px solid rgb(150, 150, 150);
       h1 {
         margin: 0;
-        // font-size: 50px;
         font-size: 5.006257822277847vmin;
       }
     }
@@ -34,7 +29,6 @@ section.our-guides {
         border-bottom: 1px solid rgb(210, 210, 210);
         img.guide-image {
           width: 35%;
-          // height: 35%;
           float: left;
           margin: 8px 15px 5px 0px;
         }

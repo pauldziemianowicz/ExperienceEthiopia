@@ -18,16 +18,20 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
       if (!$scope.view.aboutUsDropdownVisible) {
         $scope.view.aboutUsDropdownVisible = true;
         $scope.view.hikingToursDropdownVisible = false;
+        $scope.view.tourInformationDropdownVisible = false;
       }
     } else if (className === 'nav-option-text hiking-tours') {
       if (!$scope.view.hikingToursDropdownVisible) {
         $scope.view.hikingToursDropdownVisible = true;
         $scope.view.aboutUsDropdownVisible = false;
+        $scope.view.tourInformationDropdownVisible = false;
       }
     } else if (className === 'nav-option-text tour-information') {
       if (!$scope.view.tourInformationDropdownVisible) {
         $scope.view.tourInformationDropdownVisible = true;
         $scope.view.aboutUsDropdownVisible = false;
+        $scope.view.hikingToursDropdownVisible = false;
+
       }
     } else {
       var firstClassListName = event.target.classList[0];

@@ -10,8 +10,11 @@
       <p class="nav-option-text about-us" ng-mouseover="view.toggleAboutUsDropdown(true)">About</p>
         <!-- au-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
         <div class="about-us-dropdown au-do" ng-show="view.aboutUsDropdownVisible">
-          <div class="dropdown-option au-do">
-            <p class="dropdown-option-text au-do">Our Story</p>
+          <div class="dropdown-option ti-do">
+            <p class="dropdown-option-text ti-do">The Simien Mountains</p>
+          </div>
+          <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'our_story'}">
+            <p class="dropdown-option-text au-do" ng-click="siteNavigation.ourStory()">Our Story</p>
           </div>
           <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'our_guides'}">
             <p class="dropdown-option-text au-do" ng-click="siteNavigation.ourGuides()">Our Guides</p>
@@ -34,12 +37,6 @@
       <p class="nav-option-text tour-information" ng-mouseover="view.toggleTourInformationDropdown(true)">Tour Information</p>
       <!-- ht-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
       <div class="tour-information-dropdown ht-do" ng-show="view.tourInformationDropdownVisible">
-        <div class="dropdown-option ti-do">
-          <p class="dropdown-option-text ti-do">The Simien Mountains</p>
-        </div>
-        <div class="dropdown-option ti-do">
-          <p class="dropdown-option-text ti-do">Flora & Fauna</p>
-        </div>
         <div class="dropdown-option ti-do">
           <p class="dropdown-option-text ti-do">Important Information and Tips</p>
         </div>
