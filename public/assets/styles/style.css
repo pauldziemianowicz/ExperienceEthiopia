@@ -31,12 +31,13 @@ section.main-navigation-header {
   section.main-navigation-header nav.navigation-bar {
     display: flex;
     width: 100%;
-    padding-right: 5%;
+    padding-right: 0;
     justify-content: flex-end; }
     section.main-navigation-header nav.navigation-bar div.navigation-option {
       width: fit-content;
-      padding: 0px 4% 8px 4%; }
+      padding: 0px 2% 8px 2%; }
       section.main-navigation-header nav.navigation-bar div.navigation-option p.nav-option-text {
+        font-size: 1.877346683354193vmin;
         margin: 0;
         padding: 0;
         width: fit-content;
@@ -45,28 +46,29 @@ section.main-navigation-header {
           color: black;
           cursor: pointer;
           cursor: hand; }
-  section.main-navigation-header div.about-us-dropdown, section.main-navigation-header div.hiking-tours-dropdown {
+  section.main-navigation-header div.about-us-dropdown, section.main-navigation-header div.hiking-tours-dropdown, section.main-navigation-header div.tour-information-dropdown {
     position: absolute;
+    min-width: 11vw;
     background-color: white;
     border: 1px solid #a0a0a0;
     box-shadow: -1px 1px 1px 0px #c3c2c2; }
-    section.main-navigation-header div.about-us-dropdown div.dropdown-option, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option {
+    section.main-navigation-header div.about-us-dropdown div.dropdown-option, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option, section.main-navigation-header div.tour-information-dropdown div.dropdown-option {
       padding: 5px;
       border-bottom: 1px solid #f0f0f0; }
-      section.main-navigation-header div.about-us-dropdown div.dropdown-option:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option:hover {
-        background-color: rgba(1, 138, 44, 0.1);
+      section.main-navigation-header div.about-us-dropdown div.dropdown-option:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option:hover, section.main-navigation-header div.tour-information-dropdown div.dropdown-option:hover {
         cursor: pointer;
         cursor: hand; }
-      section.main-navigation-header div.about-us-dropdown div.dropdown-option.current-page, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option.current-page {
-        background-color: rgba(1, 138, 44, 0.1); }
-        section.main-navigation-header div.about-us-dropdown div.dropdown-option.current-page p.dropdown-option-text, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option.current-page p.dropdown-option-text {
+        section.main-navigation-header div.about-us-dropdown div.dropdown-option:hover p.dropdown-option-text, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option:hover p.dropdown-option-text, section.main-navigation-header div.tour-information-dropdown div.dropdown-option:hover p.dropdown-option-text {
           color: black; }
-      section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text {
+      section.main-navigation-header div.about-us-dropdown div.dropdown-option.current-page p.dropdown-option-text, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option.current-page p.dropdown-option-text, section.main-navigation-header div.tour-information-dropdown div.dropdown-option.current-page p.dropdown-option-text {
+        color: #018a2c; }
+      section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text, section.main-navigation-header div.tour-information-dropdown div.dropdown-option p.dropdown-option-text {
+        font-size: 1.877346683354193vmin;
         margin: 0;
         padding: 0;
         width: fit-content;
         color: #646464; }
-        section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text:hover {
+        section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text:hover, section.main-navigation-header div.tour-information-dropdown div.dropdown-option p.dropdown-option-text:hover {
           color: black; }
 
 section.home-page {
@@ -203,6 +205,73 @@ section.our-guides {
             section.our-guides section.page-content-main div.page-content div.guide-content-block div.guide-contact p.email {
               margin-right: 40px; }
 
+section.three-day-hiking-tour {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%; }
+  section.three-day-hiking-tour div.header-filler {
+    width: 100%;
+    height: 8vh; }
+  section.three-day-hiking-tour section.page-content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 92vh;
+    padding: 3vh 7vw 3vh 7vw; }
+    section.three-day-hiking-tour section.page-content-main div.page-content-title {
+      width: 100%;
+      padding: 5px 0 5px 0;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #969696; }
+      section.three-day-hiking-tour section.page-content-main div.page-content-title h1 {
+        margin: 0;
+        font-size: 5.006257822277847vmin; }
+    section.three-day-hiking-tour section.page-content-main div.page-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary {
+        width: 100%;
+        height: auto;
+        padding: 15px 0 10px 30px; }
+        section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description {
+          border-top: 1px solid #d2d2d2;
+          padding: 10px 0px 20px 0px;
+          display: block; }
+          section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-header h5 {
+            text-decoration: underline; }
+          section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information {
+            display: block;
+            padding-left: 15px; }
+            section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-stats {
+              float: left;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 30px; }
+              section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-stats span.day-stat {
+                display: flex;
+                margin: 0; }
+                section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-stats span.day-stat p {
+                  margin: 0;
+                  padding: 0; }
+                  section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-stats span.day-stat p.day-stats-title {
+                    font-weight: 600; }
+            section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-images {
+              float: right; }
+              section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-images img.day-image {
+                width: 450px;
+                float: right;
+                margin: 0px 0px 15px 15px; }
+            section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-description {
+              clear: left;
+              margin-top: 50px; }
+              section.three-day-hiking-tour section.page-content-main div.page-content div.trip-itinerary div.itinerary-day-description div.day-information div.day-description p {
+                text-indent: 60px;
+                margin: 0;
+                margin-top: 50px; }
+
 html {
   width: 100%;
   height: 100%; }
@@ -213,5 +282,28 @@ body {
 
 p {
   font-family: 'PT Sans Caption', sans-serif; }
+
+div.content-dropdown-container {
+  width: 100%; }
+  div.content-dropdown-container div.content-dropdown-label {
+    display: flex;
+    width: 100%;
+    padding: 5px 0px 0px 5px;
+    border: 1px solid #969696;
+    box-shadow: -1px 1px 1px 0px #c3c2c2; }
+    div.content-dropdown-container div.content-dropdown-label h4 {
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+      color: #5a5a5a; }
+    div.content-dropdown-container div.content-dropdown-label .fa-angle-right {
+      color: #5a5a5a; }
+    div.content-dropdown-container div.content-dropdown-label:hover {
+      cursor: pointer;
+      cursor: hand; }
+      div.content-dropdown-container div.content-dropdown-label:hover h4, div.content-dropdown-container div.content-dropdown-label:hover .fa-angle-right {
+        color: black; }
+    div.content-dropdown-container div.content-dropdown-label.displayed h4 {
+      color: black; }
 
 /*# sourceMappingURL=style.css.map */

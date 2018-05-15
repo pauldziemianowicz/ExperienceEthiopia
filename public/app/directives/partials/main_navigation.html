@@ -7,7 +7,7 @@
 
   <nav class="navigation-bar">
     <div class="navigation-option">
-      <p class="nav-option-text about-us" ng-mouseover="view.toggleAboutUsDropdown(true)">About Us</p>
+      <p class="nav-option-text about-us" ng-mouseover="view.toggleAboutUsDropdown(true)">About</p>
         <!-- au-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
         <div class="about-us-dropdown au-do" ng-show="view.aboutUsDropdownVisible">
           <div class="dropdown-option au-do">
@@ -19,25 +19,34 @@
           <div class="dropdown-option au-do">
             <p class="dropdown-option-text au-do">What Makes Us Different</p>
           </div>
-          <div class="dropdown-option au-do">
-            <p class="dropdown-option-text au-do">Photo Gallery</p>
+        </div>
+    </div>
+    <div class="navigation-option">
+      <p class="nav-option-text hiking-tours" ng-mouseover="view.toggleHikingToursDropdown(true)">Tour Packages</p>
+        <!-- ht-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
+        <div class="hiking-tours-dropdown ht-do" ng-show="view.hikingToursDropdownVisible">
+          <div class="dropdown-option ht-do" ng-class="{'current-page': view.currentState === 'three_day_hiking_tour'}">
+            <p class="dropdown-option-text ht-do" ng-click="siteNavigation.threeDayHikingTour()">3 Day Hiking Tour</p>
           </div>
         </div>
     </div>
     <div class="navigation-option">
-      <p class="nav-option-text hiking-tours" ng-mouseover="view.toggleHikingToursDropdown(true)">Hiking Tours</p>
-        <!-- ht-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
-        <div class="hiking-tours-dropdown ht-do" ng-show="view.hikingToursDropdownVisible">
-          <div class="dropdown-option ht-do">
-            <p class="dropdown-option-text ht-do">Tour Packages</p>
-          </div>
-          <div class="dropdown-option ht-do">
-            <p class="dropdown-option-text ht-do">The Simien Mountains</p>
-          </div>
-          <div class="dropdown-option ht-do">
-            <p class="dropdown-option-text ht-do">Important Information and Tips</p>
-          </div>
+      <p class="nav-option-text tour-information" ng-mouseover="view.toggleTourInformationDropdown(true)">Tour Information</p>
+      <!-- ht-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
+      <div class="tour-information-dropdown ht-do" ng-show="view.tourInformationDropdownVisible">
+        <div class="dropdown-option ti-do">
+          <p class="dropdown-option-text ti-do">The Simien Mountains</p>
         </div>
+        <div class="dropdown-option ti-do">
+          <p class="dropdown-option-text ti-do">Flora & Fauna</p>
+        </div>
+        <div class="dropdown-option ti-do">
+          <p class="dropdown-option-text ti-do">Important Information and Tips</p>
+        </div>
+      </div>
+    </div>
+    <div class="navigation-option">
+      <p class="nav-option-text photo-gallery">Photo Gallery</p>
     </div>
     <div class="navigation-option">
       <p class="nav-option-text testimonials">Testimonials</p>

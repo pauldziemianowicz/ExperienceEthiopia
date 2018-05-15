@@ -5,9 +5,9 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
   $scope.uploader = {};
   $scope.siteNavigation = {};
 
-  var aWindow = angular.element($window);
   $scope.view.aboutUsDropdownVisible = false;
   $scope.view.hikingToursDropdownVisible = false;
+  $scope.view.tourInformationDropdownVisible = false;
   $scope.view.currentState = $state.current.name;
 
   $(window).on('mouseover', function(event) {
@@ -24,6 +24,11 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
         $scope.view.hikingToursDropdownVisible = true;
         $scope.view.aboutUsDropdownVisible = false;
       }
+    } else if (className === 'nav-option-text tour-information') {
+      if (!$scope.view.tourInformationDropdownVisible) {
+        $scope.view.tourInformationDropdownVisible = true;
+        $scope.view.aboutUsDropdownVisible = false;
+      }
     } else {
       var firstClassListName = event.target.classList[0];
       if (firstClassListName === 'about-us-dropdown' || firstClassListName === 'hiking-tours-dropdown' || firstClassListName === 'dropdown-option' || firstClassListName === 'dropdown-option-text') {
@@ -33,7 +38,9 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
           $scope.view.aboutUsDropdownVisible = false;
         } else if ($scope.view.hikingToursDropdownVisible) {
           $scope.view.hikingToursDropdownVisible = false;
-        };
+        } else if ($scope.view.tourInformationDropdownVisible) {
+          $scope.view.tourInformationDropdownVisible = false;
+        }
       };
     };
 
@@ -61,7 +68,10 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
   $scope.siteNavigation.photoGallery = function() {
     $state.go('photo_gallery');
     $scope.view.currentState = 'photo_gallery';
-
+  };
+  $scope.siteNavigation.threeDayHikingTour = function() {
+    $state.go('three_day_hiking_tour');
+    $scope.view.currentState = 'three_day_hiking_tour';
   };
 
   // $scope.view.toggleAboutUsDropdown = function(state) {
