@@ -1,5 +1,5 @@
 <section class="main-navigation-header">
-  
+
   <span class="glyphicon glyphicon-chevron-down"></span>
   <div class="logo-container" ng-click="siteNavigation.home()">
     <p>Logo Placeholder</p>
@@ -9,35 +9,35 @@
   <nav class="navigation-bar">
     <div class="navigation-option">
       <p class="nav-option-text about-us" ng-mouseover="view.toggleAboutUsDropdown(true)">About</p>
-        <!-- au-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
-        <div class="about-us-dropdown au-do" ng-show="view.aboutUsDropdownVisible">
-          <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'simien_mountains'}">
-            <p class="dropdown-option-text ti-do" ng-click="siteNavigation.simienMountains()">The Simien Mountains</p>
-          </div>
-          <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'our_story'}">
-            <p class="dropdown-option-text au-do" ng-click="siteNavigation.ourStory()">Our Story</p>
-          </div>
-          <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'our_guides'}">
-            <p class="dropdown-option-text au-do" ng-click="siteNavigation.ourGuides()">Our Guides</p>
-          </div>
-          <div class="dropdown-option au-do">
-            <p class="dropdown-option-text au-do">What Makes Us Different</p>
-          </div>
+      <!-- au-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
+      <div class="about-us-dropdown au-do" ng-show="view.aboutUsDropdownVisible">
+        <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'simien_mountains'}">
+          <p class="dropdown-option-text au-do" ng-click="siteNavigation.simienMountains()">The Simien Mountains</p>
         </div>
+        <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'our_story'}">
+          <p class="dropdown-option-text au-do" ng-click="siteNavigation.ourStory()">Our Story</p>
+        </div>
+        <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'our_guides'}">
+          <p class="dropdown-option-text au-do" ng-click="siteNavigation.ourGuides()">Our Guides</p>
+        </div>
+        <div class="dropdown-option au-do">
+          <p class="dropdown-option-text au-do">What Makes Us Different</p>
+        </div>
+      </div>
     </div>
     <div class="navigation-option">
       <p class="nav-option-text hiking-tours" ng-mouseover="view.toggleHikingToursDropdown(true)">Tour Packages</p>
-        <!-- ht-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
-        <div class="hiking-tours-dropdown ht-do" ng-show="view.hikingToursDropdownVisible">
-          <div class="dropdown-option ht-do" ng-class="{'current-page': view.currentState === 'three_day_hiking_tour'}">
-            <p class="dropdown-option-text ht-do" ng-click="siteNavigation.threeDayHikingTour()">3 Day Hiking Tour</p>
+        <!-- tp-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
+        <div class="hiking-tours-dropdown tp-do" ng-show="view.hikingToursDropdownVisible">
+          <div class="dropdown-option tp-do" ng-class="{'current-page': view.currentState === 'three_day_hiking_tour'}">
+            <p class="dropdown-option-text tp-do" ng-click="siteNavigation.threeDayHikingTour()">3 Day Hiking Tour</p>
           </div>
         </div>
     </div>
     <div class="navigation-option">
       <p class="nav-option-text tour-information" ng-mouseover="view.toggleTourInformationDropdown(true)">Tour Information</p>
-      <!-- ht-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
-      <div class="tour-information-dropdown ht-do" ng-show="view.tourInformationDropdownVisible">
+      <!-- ti-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
+      <div class="tour-information-dropdown ti-do" ng-show="view.tourInformationDropdownVisible">
         <div class="dropdown-option ti-do">
           <p class="dropdown-option-text ti-do">Important Information and Tips</p>
         </div>

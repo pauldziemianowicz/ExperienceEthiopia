@@ -71,7 +71,6 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
   $scope.siteNavigation.whatMakesUsDifferent = function() {
     $state.go('what_makes_us_different');
     $scope.view.currentState = 'what_makes_us_different';
-
   };
   $scope.siteNavigation.photoGallery = function() {
     $state.go('photo_gallery');
