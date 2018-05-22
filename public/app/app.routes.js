@@ -6,6 +6,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('home', {
       url: '/',
       templateUrl: "views/home.html",
+    }).state('simien_mountains', {
+      url: '/simien-mountains',
+      templateUrl: "views/simien_mountains.html",
     }).state('our_story', {
       url: '/our-story',
       templateUrl: "views/our_story.html",

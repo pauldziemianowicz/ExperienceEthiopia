@@ -60,6 +60,10 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
     $state.go('our_story');
     $scope.view.currentState = 'our_story';
   };
+  $scope.siteNavigation.simienMountains = function() {
+    $state.go('simien_mountains');
+    $scope.view.currentState = 'simien_mountains';
+  };
   $scope.siteNavigation.ourGuides = function() {
     $state.go('our_guides');
     $scope.view.currentState = 'our_guides';

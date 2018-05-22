@@ -1,0 +1,55 @@
+section.simien-mountains {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%;
+  section.page-content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 92vh;
+    padding: 3vh 7vw 3vh 7vw;
+    div.page-content-title {
+      width: 100%;
+      padding: 5px 0 5px 0;
+      margin-bottom: 50px;
+      border-bottom: 1px solid rgb(150, 150, 150);
+      h1 {
+        margin: 0;
+        font-size: 5.006257822277847vmin;
+      }
+    }
+    cite.source-citation {
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    div.page-content {
+      display: block;
+      width: 100%;
+      div.content-dropdown-container {
+        div.dropdown-content {
+          padding: 2.503128911138924vmin;
+          div.content-section {
+            div.sub-section {
+              margin-bottom: 25px;
+              h5 {
+                margin-top: 0;
+              }
+              p {
+                padding-left: 5vmin;
+              }
+              blockquote {
+                padding-left: 10vw;
+                padding-right: 10vw;
+              }
+            }
+            p.first-paragraph {
+              text-indent: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
