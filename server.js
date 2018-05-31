@@ -4,8 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var enforce = require('express-sslify');
 
 var app = express();
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 app.set('case sensitive routing', true);
 // uncomment after placing your favicon in /public
