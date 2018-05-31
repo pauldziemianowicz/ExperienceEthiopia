@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var enforce = require('express-sslify');
 
 var app = express();
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+// app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 app.set('case sensitive routing', true);
 // uncomment after placing your favicon in /public
