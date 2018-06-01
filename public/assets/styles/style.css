@@ -9,6 +9,18 @@ section.main-navigation-header {
   border-bottom: 1px solid #646464;
   box-shadow: -1px 1px 1px 0px #c3c2c2;
   background-color: white; }
+  section.main-navigation-header img.head-logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    top: 10%;
+    left: 3%; }
+    section.main-navigation-header img.head-logo:hover {
+      color: black;
+      cursor: pointer;
+      cursor: hand; }
   section.main-navigation-header div.logo-container {
     position: absolute;
     display: flex;
