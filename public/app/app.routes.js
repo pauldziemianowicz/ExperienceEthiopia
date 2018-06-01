@@ -24,6 +24,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
     }).state('photo_gallery', {
       url: '/photo-gallery',
       templateUrl: "views/photo_gallery.html",
+    }).state('contact_us', {
+      url: '/contact-us',
+      templateUrl: "views/contact_us.html",
     });
 
 });

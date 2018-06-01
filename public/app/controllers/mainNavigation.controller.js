@@ -80,6 +80,10 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
     $state.go('three_day_hiking_tour');
     $scope.view.currentState = 'three_day_hiking_tour';
   };
+  $scope.siteNavigation.contactUs = function() {
+    $state.go('contact_us');
+    $scope.view.currentState = 'contact_us';
+  };
 
   // $scope.view.toggleAboutUsDropdown = function(state) {
   //   $scope.view.aboutUsDropdownVisible = state;
