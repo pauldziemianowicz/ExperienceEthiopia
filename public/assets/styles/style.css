@@ -97,7 +97,7 @@ section.home-page {
     width: 100%;
     height: 75vh;
     border-bottom: 1px solid black;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../../../assets/images/simien-mountains-background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("http://d16vkdabw3fpak.cloudfront.net/simien-mountains-background.jpg");
     background-size: 100%;
     background-position: 0px -18.75vh;
     padding: 40px 0px 80px 0px; }

@@ -3,6 +3,8 @@ app.controller('TourPackagesController', ['$window', '$scope', '$state', '$rootS
   $scope.view = {};
   $scope.data = {};
 
+  console.log($rootScope.saCDNURL);
+
   $scope.view.threeDayHikingTour = {
     tripItineraryDisplayed: true,
     toggleTripItinerary: function() {
