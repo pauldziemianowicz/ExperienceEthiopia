@@ -271,6 +271,20 @@ section.simien-mountains {
     width: 100%;
     min-height: 92vh;
     padding: 3vh 7vw 3vh 7vw; }
+    section.simien-mountains section.page-content-main img.section-image.right {
+      float: right;
+      margin: 0px 0px 15px 15px; }
+    section.simien-mountains section.page-content-main img.section-image.left {
+      float: left;
+      margin: 0px 15px 15px 0px; }
+    section.simien-mountains section.page-content-main img.section-image.history {
+      width: 40%; }
+    section.simien-mountains section.page-content-main img.section-image.geology {
+      width: 25%; }
+    section.simien-mountains section.page-content-main img.section-image.native-people {
+      width: 35%; }
+    section.simien-mountains section.page-content-main img.section-image.wildlife {
+      width: 30%; }
     section.simien-mountains section.page-content-main div.page-content-title {
       width: 100%;
       padding: 5px 0 5px 0;
@@ -285,19 +299,25 @@ section.simien-mountains {
     section.simien-mountains section.page-content-main div.page-content {
       display: block;
       width: 100%; }
-      section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content {
-        padding: 2.503128911138924vmin; }
-        section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section {
-          margin-bottom: 25px; }
-          section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section h5 {
-            margin-top: 0; }
-          section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section p {
-            padding-left: 5vmin; }
-          section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section blockquote {
-            padding-left: 10vw;
-            padding-right: 10vw; }
-        section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section p.first-paragraph {
-          text-indent: 60px; }
+      section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container {
+        width: 100%; }
+        section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content {
+          width: 100%;
+          padding: 2.503128911138924vmin; }
+          section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section {
+            width: 100%; }
+            section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section {
+              width: 100%;
+              margin-bottom: 25px; }
+              section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section h5 {
+                margin-top: 0; }
+              section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section p {
+                padding-left: 5vmin; }
+              section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section blockquote {
+                padding-left: 10vw;
+                padding-right: 10vw; }
+            section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section p.first-paragraph {
+              text-indent: 60px; }
 
 section.three-day-hiking-tour {
   position: relative;

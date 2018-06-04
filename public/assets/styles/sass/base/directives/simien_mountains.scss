@@ -10,6 +10,28 @@ section.simien-mountains {
     width: 100%;
     min-height: 92vh;
     padding: 3vh 7vw 3vh 7vw;
+    img.section-image {
+      &.right {
+        float: right;
+        margin: 0px 0px 15px 15px;
+      }
+      &.left {
+        float: left;
+        margin: 0px 15px 15px 0px;
+      }
+      &.history {
+        width: 40%;
+      }
+      &.geology {
+        width: 25%;
+      }
+      &.native-people {
+        width: 35%;
+      }
+      &.wildlife {
+        width: 30%;
+      }
+    }
     div.page-content-title {
       width: 100%;
       padding: 5px 0 5px 0;
@@ -28,10 +50,14 @@ section.simien-mountains {
       display: block;
       width: 100%;
       div.content-dropdown-container {
+        width: 100%;
         div.dropdown-content {
+          width: 100%;
           padding: 2.503128911138924vmin;
           div.content-section {
+            width: 100%;
             div.sub-section {
+              width: 100%;
               margin-bottom: 25px;
               h5 {
                 margin-top: 0;
