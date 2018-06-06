@@ -49,7 +49,6 @@ section.main-navigation-header {
   nav.navigation-bar {
     display: flex;
     width: 100%;
-    // padding-right: 5%;
     padding-right: 0;
     justify-content: flex-end;
     div.navigation-option {
@@ -75,24 +74,19 @@ section.main-navigation-header {
     background-color: white;
     border: 1px solid rgb(160, 160, 160);
     box-shadow: -1px 1px 1px 0px rgb(195, 194, 194);
-    // padding: 0px 5px 0px 5px;
     div.dropdown-option {
       padding: 5px;
       border-bottom: 1px solid rgb(240, 240, 240);
       &:hover {
-        // background-color: rgba(1, 138, 44, 0.1);
         cursor: pointer;
         cursor: hand;
         p.dropdown-option-text {
-          // color: rgb(1, 138, 44);
           color: rgb(0, 0, 0);
         }
       }
       &.current-page {
-        // background-color: rgba(1, 138, 44, 0.1);
         p.dropdown-option-text {
           color: rgb(1, 138, 44);
-          // color: rgb(0, 0, 0);
         }
       }
       p.dropdown-option-text {
@@ -102,7 +96,6 @@ section.main-navigation-header {
         width: fit-content;
         color: rgb(100, 100, 100);
         &:hover {
-          // color: rgb(1, 138, 44);
           color: rgb(0, 0, 0);
         }
       }

@@ -24,6 +24,7 @@ app.use("/our-guides", express.static(__dirname + "/public/index.html"));
 app.use("/simien-mountains", express.static(__dirname + "/public/index.html"));
 app.use("/what-makes-us-different", express.static(__dirname + "/public/index.html"));
 app.use("/three-day-hiking-tour", express.static(__dirname + "/public/index.html"));
+app.use("/important-information-and-tips", express.static(__dirname + "/public/index.html"));
 app.use("/photo-gallery", express.static(__dirname + "/public/index.html"));
 app.use("/contact-us", express.static(__dirname + "/public/index.html"));
 

@@ -1,7 +1,7 @@
 <section class="main-navigation-header">
 
   <span class="glyphicon glyphicon-chevron-down"></span>
-  <img ng-src="{{$root.saCDNURL}}experience-ethiopia-logo.png" class="head-logo" ng-click="siteNavigation.home()">
+  <img ng-src="{{$root.saCDNURL}}experience-ethiopia-logo.png" class="head-logo" ng-click="siteNavigation.navigateToViewState('home')">
   <div class="main-navigation-buffer"></div>
 
   <nav class="navigation-bar">
@@ -9,17 +9,17 @@
       <p class="nav-option-text about-us" ng-mouseover="view.toggleAboutUsDropdown(true)">About</p>
       <!-- au-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
       <div class="about-us-dropdown au-do" ng-show="view.aboutUsDropdownVisible">
-        <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'simien_mountains'}">
-          <p class="dropdown-option-text au-do" ng-click="siteNavigation.simienMountains()">The Simien Mountains</p>
+        <div class="dropdown-option au-do" ng-class="{'current-page': $root.currentViewState === 'simien_mountains'}">
+          <p class="dropdown-option-text au-do" ng-click="siteNavigation.navigateToViewState('simien_mountains')">The Simien Mountains</p>
         </div>
-        <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'our_story'}">
-          <p class="dropdown-option-text au-do" ng-click="siteNavigation.ourStory()">Our Story</p>
+        <div class="dropdown-option au-do" ng-class="{'current-page': $root.currentViewState === 'our_story'}">
+          <p class="dropdown-option-text au-do" ng-click="siteNavigation.navigateToViewState('our_story')">Our Story</p>
         </div>
-        <div class="dropdown-option au-do" ng-class="{'current-page': view.currentState === 'our_guides'}">
-          <p class="dropdown-option-text au-do" ng-click="siteNavigation.ourGuides()">Our Guides</p>
+        <div class="dropdown-option au-do" ng-class="{'current-page': $root.currentViewState === 'our_guides'}">
+          <p class="dropdown-option-text au-do" ng-click="siteNavigation.navigateToViewState('our_guides')">Our Guides</p>
         </div>
-        <div class="dropdown-option au-do">
-          <p class="dropdown-option-text au-do">What Makes Us Different</p>
+        <div class="dropdown-option au-do" ng-class="{'current-page': $root.currentViewState === 'what_makes_us_different'}">
+          <p class="dropdown-option-text au-do" ng-click="siteNavigation.navigateToViewState('what_makes_us_different')">What Makes Us Different</p>
         </div>
       </div>
     </div>
@@ -27,8 +27,8 @@
       <p class="nav-option-text hiking-tours" ng-mouseover="view.toggleHikingToursDropdown(true)">Tour Packages</p>
         <!-- tp-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
         <div class="hiking-tours-dropdown tp-do" ng-show="view.hikingToursDropdownVisible">
-          <div class="dropdown-option tp-do" ng-class="{'current-page': view.currentState === 'three_day_hiking_tour'}">
-            <p class="dropdown-option-text tp-do" ng-click="siteNavigation.threeDayHikingTour()">3 Day Hiking Tour</p>
+          <div class="dropdown-option tp-do" ng-class="{'current-page': $root.currentViewState === 'three_day_hiking_tour'}">
+            <p class="dropdown-option-text tp-do" ng-click="siteNavigation.navigateToViewState('three_day_hiking_tour')">3 Day Hiking Tour</p>
           </div>
         </div>
     </div>
@@ -36,8 +36,8 @@
       <p class="nav-option-text tour-information" ng-mouseover="view.toggleTourInformationDropdown(true)">Tour Information</p>
       <!-- ti-do class = about-us-dropdown-option (for dropdown visibility event trigger exception) -->
       <div class="tour-information-dropdown ti-do" ng-show="view.tourInformationDropdownVisible">
-        <div class="dropdown-option ti-do">
-          <p class="dropdown-option-text ti-do">Important Information and Tips</p>
+        <div class="dropdown-option ti-do" ng-class="{'current-page': $root.currentViewState === 'important_information_and_tips'}">
+          <p class="dropdown-option-text ti-do" ng-click="siteNavigation.navigateToViewState('important_information_and_tips')">Important Information and Tips</p>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
       <p class="nav-option-text testimonials">Testimonials</p>
     </div>
     <div class="navigation-option">
-      <p class="nav-option-text contact-us" ng-click="siteNavigation.contactUs()">Contact Us</p>
+      <p class="nav-option-text contact-us" ng-click="siteNavigation.navigateToViewState('contact_us')">Contact Us</p>
     </div>
   </nav>
 

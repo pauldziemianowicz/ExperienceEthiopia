@@ -1,4 +1,142 @@
 @import url("https://fonts.googleapis.com/css?family=Jua|PT+Sans+Caption");
+section.contact-us {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%; }
+  section.contact-us section.page-content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 92vh;
+    padding: 3vh 7vw 3vh 7vw; }
+    section.contact-us section.page-content-main div.page-content-title {
+      width: 100%;
+      padding: 5px 0 5px 0;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #969696; }
+      section.contact-us section.page-content-main div.page-content-title h2 {
+        margin: 0;
+        font-size: 4.005006257822278vmin; }
+    section.contact-us section.page-content-main div.page-content {
+      display: block;
+      width: 100%; }
+      section.contact-us section.page-content-main div.page-content p {
+        margin: 0; }
+
+section.home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%; }
+  section.home-page section.website-introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75vh;
+    border-bottom: 1px solid black;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("http://d16vkdabw3fpak.cloudfront.net/simien-mountains-background.jpg");
+    background-size: 100%;
+    background-position: 0px -18.75vh;
+    padding: 40px 0px 80px 0px; }
+    section.home-page section.website-introduction-container h1, section.home-page section.website-introduction-container h2, section.home-page section.website-introduction-container h3, section.home-page section.website-introduction-container h4, section.home-page section.website-introduction-container h5 {
+      width: fit-content;
+      padding: 0;
+      margin: 0;
+      font-family: 'Jua', sans-serif; }
+    section.home-page section.website-introduction-container div.intro-statement {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: fit-content; }
+    section.home-page section.website-introduction-container div.introductory-ctas {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      section.home-page section.website-introduction-container div.introductory-ctas button {
+        width: 100%;
+        background-color: #018A2C;
+        padding: 0.500625782227785vmin 0.750938673341677vmin 0.500625782227785vmin 0.750938673341677vmin;
+        margin: 0;
+        box-shadow: -1px 1px 1px 0px black;
+        color: white;
+        border: 1px solid black;
+        font-weight: 600;
+        font-size: 18px; }
+        section.home-page section.website-introduction-container div.introductory-ctas button:hover {
+          cursor: pointer;
+          cursor: hand; }
+      section.home-page section.website-introduction-container div.introductory-ctas p {
+        margin: 0;
+        color: white;
+        font-size: 14px;
+        color: #ebebeb; }
+        section.home-page section.website-introduction-container div.introductory-ctas p:hover {
+          cursor: pointer;
+          cursor: hand;
+          color: white; }
+  section.home-page div.introduction-break {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 25vh; }
+    section.home-page div.introduction-break div.learn-more-cta {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: fit-content;
+      padding-top: 10px; }
+      section.home-page div.introduction-break div.learn-more-cta h5 {
+        position: absolute;
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        font-family: 'Jua', sans-serif; }
+      section.home-page div.introduction-break div.learn-more-cta:hover {
+        cursor: pointer;
+        cursor: hand; }
+  section.home-page section.home-page-content-introduction {
+    width: 100%;
+    height: 100vh; }
+
+section.important-information-and-tips {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%; }
+  section.important-information-and-tips section.page-content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 92vh;
+    padding: 3vh 7vw 3vh 7vw; }
+    section.important-information-and-tips section.page-content-main div.page-content-title {
+      width: 100%;
+      padding: 5px 0 5px 0;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #969696; }
+      section.important-information-and-tips section.page-content-main div.page-content-title h2 {
+        margin: 0;
+        font-size: 4.005006257822278vmin; }
+    section.important-information-and-tips section.page-content-main div.page-content {
+      display: block;
+      width: 100%; }
+      section.important-information-and-tips section.page-content-main div.page-content div.content-section {
+        margin: 0 0 25px 0; }
+        section.important-information-and-tips section.page-content-main div.page-content div.content-section p.indent {
+          text-indent: 60px; }
+        section.important-information-and-tips section.page-content-main div.page-content div.content-section ul {
+          margin-top: 10px;
+          list-style: disc;
+          margin-left: 50px; }
+
 section.main-navigation-header {
   position: fixed;
   display: flex;
@@ -82,86 +220,6 @@ section.main-navigation-header {
         color: #646464; }
         section.main-navigation-header div.about-us-dropdown div.dropdown-option p.dropdown-option-text:hover, section.main-navigation-header div.hiking-tours-dropdown div.dropdown-option p.dropdown-option-text:hover, section.main-navigation-header div.tour-information-dropdown div.dropdown-option p.dropdown-option-text:hover {
           color: black; }
-
-section.home-page {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  min-height: 100%; }
-  section.home-page section.website-introduction-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 75vh;
-    border-bottom: 1px solid black;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("http://d16vkdabw3fpak.cloudfront.net/simien-mountains-background.jpg");
-    background-size: 100%;
-    background-position: 0px -18.75vh;
-    padding: 40px 0px 80px 0px; }
-    section.home-page section.website-introduction-container h1, section.home-page section.website-introduction-container h2, section.home-page section.website-introduction-container h3, section.home-page section.website-introduction-container h4, section.home-page section.website-introduction-container h5 {
-      width: fit-content;
-      padding: 0;
-      margin: 0;
-      font-family: 'Jua', sans-serif; }
-    section.home-page section.website-introduction-container div.intro-statement {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: fit-content; }
-    section.home-page section.website-introduction-container div.introductory-ctas {
-      width: 25%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
-      section.home-page section.website-introduction-container div.introductory-ctas button {
-        width: 100%;
-        background-color: #018A2C;
-        padding: 0.500625782227785vmin 0.750938673341677vmin 0.500625782227785vmin 0.750938673341677vmin;
-        margin: 0;
-        box-shadow: -1px 1px 1px 0px black;
-        color: white;
-        border: 1px solid black;
-        font-weight: 600;
-        font-size: 18px; }
-        section.home-page section.website-introduction-container div.introductory-ctas button:hover {
-          cursor: pointer;
-          cursor: hand; }
-      section.home-page section.website-introduction-container div.introductory-ctas p {
-        margin: 0;
-        color: white;
-        font-size: 14px;
-        color: #ebebeb; }
-        section.home-page section.website-introduction-container div.introductory-ctas p:hover {
-          cursor: pointer;
-          cursor: hand;
-          color: white; }
-  section.home-page div.introduction-break {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 25vh; }
-    section.home-page div.introduction-break div.learn-more-cta {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      width: fit-content;
-      padding-top: 10px; }
-      section.home-page div.introduction-break div.learn-more-cta h5 {
-        position: absolute;
-        width: fit-content;
-        padding: 0;
-        margin: 0;
-        font-family: 'Jua', sans-serif; }
-      section.home-page div.introduction-break div.learn-more-cta:hover {
-        cursor: pointer;
-        cursor: hand; }
-  section.home-page section.home-page-content-introduction {
-    width: 100%;
-    height: 100vh; }
 
 section.our-guides {
   position: relative;
@@ -284,7 +342,7 @@ section.simien-mountains {
     section.simien-mountains section.page-content-main img.section-image.native-people {
       width: 35%; }
     section.simien-mountains section.page-content-main img.section-image.wildlife {
-      width: 30%; }
+      width: 25%; }
     section.simien-mountains section.page-content-main div.page-content-title {
       width: 100%;
       padding: 5px 0 5px 0;
@@ -308,7 +366,7 @@ section.simien-mountains {
             width: 100%; }
             section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section {
               width: 100%;
-              margin-bottom: 25px; }
+              margin-bottom: 35px; }
               section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section h5 {
                 margin-top: 0; }
               section.simien-mountains section.page-content-main div.page-content div.content-dropdown-container div.dropdown-content div.content-section div.sub-section p {
@@ -384,31 +442,41 @@ section.three-day-hiking-tour {
                 margin: 0;
                 margin-top: 50px; }
 
-section.contact-us {
+section.what-makes-us-different {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100vw;
   min-height: 100%; }
-  section.contact-us section.page-content-main {
+  section.what-makes-us-different section.page-content-main {
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 92vh;
     padding: 3vh 7vw 3vh 7vw; }
-    section.contact-us section.page-content-main div.page-content-title {
+    section.what-makes-us-different section.page-content-main div.page-content-title {
       width: 100%;
       padding: 5px 0 5px 0;
       margin-bottom: 30px;
       border-bottom: 1px solid #969696; }
-      section.contact-us section.page-content-main div.page-content-title h2 {
+      section.what-makes-us-different section.page-content-main div.page-content-title h2 {
         margin: 0;
         font-size: 4.005006257822278vmin; }
-    section.contact-us section.page-content-main div.page-content {
+    section.what-makes-us-different section.page-content-main div.page-content {
       display: block;
       width: 100%; }
-      section.contact-us section.page-content-main div.page-content p {
-        margin: 0; }
+      section.what-makes-us-different section.page-content-main div.page-content div.content-section {
+        margin: 0 0 25px 0; }
+        section.what-makes-us-different section.page-content-main div.page-content div.content-section p.indent {
+          text-indent: 60px; }
+        section.what-makes-us-different section.page-content-main div.page-content div.content-section ol {
+          margin-top: 10px;
+          list-style: decimal;
+          list-style-type: decimal;
+          margin-left: 50px;
+          font-weight: bold; }
+          section.what-makes-us-different section.page-content-main div.page-content div.content-section ol li > span {
+            font-weight: normal; }
 
 html {
   width: 100%;

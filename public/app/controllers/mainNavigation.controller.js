@@ -8,7 +8,7 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
   $scope.view.aboutUsDropdownVisible = false;
   $scope.view.hikingToursDropdownVisible = false;
   $scope.view.tourInformationDropdownVisible = false;
-  $scope.view.currentState = $state.current.name;
+  $rootScope.currentViewState = $state.current.name;
 
   $(window).on('mouseover', function(event) {
 
@@ -51,50 +51,8 @@ app.controller('MainNavigationController', ['$window', '$scope', '$state', '$roo
     $scope.$apply();
   });
 
-  $scope.siteNavigation.home = function() {
-    $state.go('home');
-    $scope.view.currentState = 'home'
-
-  };
-  $scope.siteNavigation.ourStory = function() {
-    $state.go('our_story');
-    $scope.view.currentState = 'our_story';
-  };
-  $scope.siteNavigation.simienMountains = function() {
-    $state.go('simien_mountains');
-    $scope.view.currentState = 'simien_mountains';
-  };
-  $scope.siteNavigation.ourGuides = function() {
-    $state.go('our_guides');
-    $scope.view.currentState = 'our_guides';
-  };
-  $scope.siteNavigation.whatMakesUsDifferent = function() {
-    $state.go('what_makes_us_different');
-    $scope.view.currentState = 'what_makes_us_different';
-  };
-  $scope.siteNavigation.photoGallery = function() {
-    $state.go('photo_gallery');
-    $scope.view.currentState = 'photo_gallery';
-  };
-  $scope.siteNavigation.threeDayHikingTour = function() {
-    $state.go('three_day_hiking_tour');
-    $scope.view.currentState = 'three_day_hiking_tour';
-  };
-  $scope.siteNavigation.contactUs = function() {
-    $state.go('contact_us');
-    $scope.view.currentState = 'contact_us';
-  };
-
-  // $scope.view.toggleAboutUsDropdown = function(state) {
-  //   $scope.view.aboutUsDropdownVisible = state;
-  // };
-  //
-  // $scope.view.toggleHikingToursDropdown = function(state) {
-  //   $scope.view.hikingToursDropdownVisible = state;
-  // };
-
-  $scope.view.homeLearnMoreNav = function() {
-
+  $scope.siteNavigation.navigateToViewState = function(viewState) {
+    $state.go(viewState);
   };
 
 }]);
