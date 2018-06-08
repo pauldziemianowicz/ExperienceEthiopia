@@ -1,4 +1,153 @@
 @import url("https://fonts.googleapis.com/css?family=Jua|PT+Sans+Caption");
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100vw;
+  height: 100vh; }
+
+p {
+  font-family: 'PT Sans Caption', sans-serif; }
+
+div.content-dropdown-container {
+  width: 100%;
+  margin-bottom: 2vh; }
+  div.content-dropdown-container div.content-dropdown-label {
+    display: flex;
+    width: 100%;
+    padding: 5px 0px 0px 5px;
+    border: 1px solid #969696;
+    box-shadow: -1px 1px 1px 0px #c3c2c2; }
+    div.content-dropdown-container div.content-dropdown-label h4 {
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+      color: #5a5a5a; }
+    div.content-dropdown-container div.content-dropdown-label .fa-angle-right {
+      color: #5a5a5a; }
+    div.content-dropdown-container div.content-dropdown-label:hover {
+      cursor: pointer;
+      cursor: hand; }
+      div.content-dropdown-container div.content-dropdown-label:hover h4, div.content-dropdown-container div.content-dropdown-label:hover .fa-angle-right {
+        color: black; }
+    div.content-dropdown-container div.content-dropdown-label.displayed h4 {
+      color: black; }
+
+div.header-filler {
+  width: 100%;
+  height: 8vh; }
+
+div.booking-window-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 20; }
+  div.booking-window-background div.booking-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: fit-content;
+    width: 60vw;
+    padding: 10px 15px 10px 15px; }
+    div.booking-window-background div.booking-window p.close-booking-window {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      margin: 0;
+      padding: 0;
+      font-size: 2.753441802252816vmin;
+      line-height: 2.002503128911139vmin; }
+      div.booking-window-background div.booking-window p.close-booking-window:hover {
+        cursor: pointer;
+        cursor: hand;
+        color: red; }
+    div.booking-window-background div.booking-window h5 {
+      margin: 0; }
+    div.booking-window-background div.booking-window div.form-header {
+      border-bottom: 1px solid #cdcdcd;
+      margin-bottom: 10px; }
+    div.booking-window-background div.booking-window div.form-body form.booking-form {
+      width: 85%; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form label {
+        font-weight: 600;
+        margin-right: 20px; }
+        div.booking-window-background div.booking-window div.form-body form.booking-form label p {
+          font-weight: 300;
+          font-size: 14px;
+          margin: 0 0 5px 0; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form input.first-name {
+        width: 250px; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form input.last-name {
+        width: 300px; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form input.email {
+        width: 400px; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form input.party-size {
+        width: 100px; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form input.requested-date {
+        width: fit-content; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form div.requested-dates {
+        display: flex; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form div.requested-date-block {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-right: 10px; }
+        div.booking-window-background div.booking-window div.form-body form.booking-form div.requested-date-block span {
+          font-weight: 300;
+          font-size: 20px;
+          margin-right: 5px; }
+      div.booking-window-background div.booking-window div.form-body form.booking-form div.bf-row-5 {
+        width: 100%; }
+        div.booking-window-background div.booking-window div.form-body form.booking-form div.bf-row-5 label {
+          width: 100%; }
+          div.booking-window-background div.booking-window div.form-body form.booking-form div.bf-row-5 label textarea.additional-information {
+            width: 100%;
+            height: 100px;
+            resize: none; }
+    div.booking-window-background div.booking-window div.form-controls {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px; }
+      div.booking-window-background div.booking-window div.form-controls button.cancel-booking {
+        width: 30%;
+        background-color: #cdcdcd;
+        padding: 0.500625782227785vmin 0.750938673341677vmin 0.500625782227785vmin 0.750938673341677vmin;
+        margin: 0;
+        box-shadow: -1px 1px 1px 0px black;
+        color: black;
+        border: 1px solid black;
+        font-weight: 300;
+        font-size: 2.252816020025031vmin;
+        margin-right: 20px; }
+        div.booking-window-background div.booking-window div.form-controls button.cancel-booking:hover {
+          cursor: pointer;
+          cursor: hand; }
+      div.booking-window-background div.booking-window div.form-controls button.submit-booking {
+        width: 30%;
+        background-color: #018A2C;
+        padding: 0.500625782227785vmin 0.750938673341677vmin 0.500625782227785vmin 0.750938673341677vmin;
+        margin: 0;
+        box-shadow: -1px 1px 1px 0px black;
+        color: white;
+        border: 1px solid black;
+        font-weight: 300;
+        font-size: 2.252816020025031vmin; }
+        div.booking-window-background div.booking-window div.form-controls button.submit-booking:hover {
+          cursor: pointer;
+          cursor: hand; }
+
 section.contact-us {
   position: relative;
   display: flex;
@@ -67,7 +216,7 @@ section.home-page {
         color: white;
         border: 1px solid black;
         font-weight: 600;
-        font-size: 18px; }
+        font-size: 2.252816020025031vmin; }
         section.home-page section.website-introduction-container div.introductory-ctas button:hover {
           cursor: pointer;
           cursor: hand; }
@@ -477,44 +626,5 @@ section.what-makes-us-different {
           font-weight: bold; }
           section.what-makes-us-different section.page-content-main div.page-content div.content-section ol li > span {
             font-weight: normal; }
-
-html {
-  width: 100%;
-  height: 100%; }
-
-body {
-  width: 100vw;
-  height: 100vh; }
-
-p {
-  font-family: 'PT Sans Caption', sans-serif; }
-
-div.content-dropdown-container {
-  width: 100%;
-  margin-bottom: 2vh; }
-  div.content-dropdown-container div.content-dropdown-label {
-    display: flex;
-    width: 100%;
-    padding: 5px 0px 0px 5px;
-    border: 1px solid #969696;
-    box-shadow: -1px 1px 1px 0px #c3c2c2; }
-    div.content-dropdown-container div.content-dropdown-label h4 {
-      margin: 0;
-      padding: 0;
-      font-weight: 300;
-      color: #5a5a5a; }
-    div.content-dropdown-container div.content-dropdown-label .fa-angle-right {
-      color: #5a5a5a; }
-    div.content-dropdown-container div.content-dropdown-label:hover {
-      cursor: pointer;
-      cursor: hand; }
-      div.content-dropdown-container div.content-dropdown-label:hover h4, div.content-dropdown-container div.content-dropdown-label:hover .fa-angle-right {
-        color: black; }
-    div.content-dropdown-container div.content-dropdown-label.displayed h4 {
-      color: black; }
-
-div.header-filler {
-  width: 100%;
-  height: 8vh; }
 
 /*# sourceMappingURL=style.css.map */

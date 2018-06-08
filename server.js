@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -8,6 +9,8 @@ var bodyParser = require('body-parser');
 
 var app = express();
 // app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
+var routes = require('./routes/routes');
 
 app.set('case sensitive routing', true);
 // uncomment after placing your favicon in /public
@@ -27,6 +30,8 @@ app.use("/three-day-hiking-tour", express.static(__dirname + "/public/index.html
 app.use("/important-information-and-tips", express.static(__dirname + "/public/index.html"));
 app.use("/photo-gallery", express.static(__dirname + "/public/index.html"));
 app.use("/contact-us", express.static(__dirname + "/public/index.html"));
+
+app.use('/routes', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

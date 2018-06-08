@@ -1,0 +1,65 @@
+<div class="booking-window-background" ng-show="$root.displayBookingWindow">
+
+  <div class="booking-window">
+    <p class="close-booking-window">x</p>
+    <div class="form-header">
+      <h4>Booking Request</h4>
+    </div>
+    <div class="form-body">
+      <form class="booking-form">
+        <div class="bf-row-1">
+          <label for="">First Name:
+            <input type="text" class="first-name form-control" ng-model="bookingForm.firstName">
+          </label>
+          <label for="">Last Name:
+            <input type="text" class="last-name form-control" ng-model="bookingForm.lastName">
+          </label>
+        </div>
+        <div class="bf-row-1">
+          <label for="">Email Address:
+            <input type="email" class="email form-control" ng-model="bookingForm.emailAddress">
+          </label>
+        </div>
+        <div class="bf-row-3">
+          <label for="">Tour Package
+            <select class="tour-package form-control" ng-model="bookingForm.tourPackage">
+              <option value="">--- No Selection ---</option>
+              <option value="3-day-simien-mountain-tour">3 Day Simien Mountain Hiking Tour</option>
+              <option value="5-day-simien-mountain-tour">5 Day Simien Mountain Hiking Tour</option>
+            </select>
+          </label>
+          <label for="">Party Size
+            <input type="number" class="party-size form-control" min='1' max='10' ng-model="bookingForm.partySize">
+          </label>
+        </div>
+        <div class="bf-row-4">
+          <label for="">Requested Dates
+            <p>The requested date you enter is the first day of the scheduled tour package, so for a 3 day tour, if the start date is October 1st, the end date would be October 3rd. You may request up to 3 dates. Enter your preferred dates, and we will promptly respond to you regarding availability.</p>
+            <div class="requested-dates">
+              <div class="requested-date-block">
+                <span>1.</span><input type="date" class="requested-date form-control" ng-model="bookingForm.requestedDate1">
+              </div>
+              <div class="requested-date-block">
+                <span>2.</span><input type="date" class="requested-date form-control" ng-model="bookingForm.requestedDate2">
+              </div>
+              <div class="requested-date-block">
+                <span>3.</span><input type="date" class="requested-date form-control" ng-model="bookingForm.requestedDate3">
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="bf-row-5">
+          <label for="">Additional Questions/information
+            <p>Feel free to include any questions, considerations, and other information or special requests.</p>
+            <textarea class="additional-information form-control" ng-model="bookingform.additionalInformation"></textarea>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="form-controls">
+      <button class="cancel-booking form-control">Cancel</button>
+      <button class="submit-booking form-control" ng-click="bookingForm.submit()">Submit</button>
+    </div>
+  </div>
+
+</div>

@@ -18,6 +18,9 @@
     "express": "~4.13.1",
     "express-bearer-token": "^2.1.0",
     "express-sslify": "^1.2.0",
+    "lodash": "^4.17.10",
+    "mailgun-js": "^0.18.0",
+    "mongodb": "^2.2.33",
     "morgan": "~1.6.1",
     "request": "^2.83.0",
     "serve-favicon": "~2.3.0"
