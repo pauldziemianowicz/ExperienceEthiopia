@@ -69,7 +69,7 @@ router.post('/submit-booking-request', function(req, res, next) {
 
         mailgun.messages().send(messageToEEData, function(err, result) {
           if (err) {
-            console.log(err);
+            console.log('messageToEEData Error:', err);
           } else {
             console.log('messageToEEData send result:', result);
           };
@@ -85,7 +85,7 @@ router.post('/submit-booking-request', function(req, res, next) {
 
         mailgun.messages().send(messageToUserData, function(err, result) {
           if (err) {
-            console.log(err);
+            console.log('messageToUserData Error:', err);
           } else {
             console.log('messageToUserData send result:', result);
           };
